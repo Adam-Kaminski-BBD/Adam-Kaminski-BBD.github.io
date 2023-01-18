@@ -9,7 +9,17 @@
 </head>
 
 <body>
-    <script>
+    Logged In!
+    <form action="https://github.com/login/oauth/access_token" method="post">
+        <input hidden type="text" name="client_id" value="e1dc88c88c7c930809ca">
+        <input hidden type="text" name="client_secret" value="7412882aabb82f2b6f473c0d8ab8a4c70d44e6d7">
+        <input hidden type="text" name="code" id="code">
+        <button type="submit">
+            Get an access token!
+        </button>
+    </form>
+    <p id="access_token"></p>
+    <script async>
     //     console.log(window.location.search.substr(6))
     //     fetch('https://github.com/login/oauth/access_token', {
     //     method: 'POST',
