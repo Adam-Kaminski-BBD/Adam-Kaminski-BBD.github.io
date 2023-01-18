@@ -11,7 +11,7 @@
 <body>
     <script>
         console.log(window.location.search.substr(6))
-        fetch('https://cors.io/?https://github.com/login/oauth/access_token', {
+        fetch('https://github.com/login/oauth/access_token', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -23,7 +23,7 @@
                                 "client_secret": "7412882aabb82f2b6f473c0d8ab8a4c70d44e6d7"})
     })
     .then(response => response.json())
-    .then(response => console.log(JSON.stringify(response)))
+    .then(response => console.log(JSON.stringify(response), "OUT"))
         
     </script>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
