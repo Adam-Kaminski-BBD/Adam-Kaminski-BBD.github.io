@@ -11,12 +11,12 @@
 <body>
     <script>
         console.log(window.location.search.substr(6))
-        fetch('https://github.com/login/oauth/access_token', {
+        fetch('http://cors.io/?https://github.com/login/oauth/access_token', {
         method: 'POST',
-        // headers: {
-        //     'Accept': 'application/json',
-        //     'Content-Type': 'application/json'
-        // },
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify({ "code": window.location.search.substr(6),
                                 "client_id": 'e1dc88c88c7c930809ca',
                                 "client_secret": "7412882aabb82f2b6f473c0d8ab8a4c70d44e6d7"})
