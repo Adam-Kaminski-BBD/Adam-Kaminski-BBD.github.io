@@ -14,16 +14,16 @@
         fetch('https://github.com/login/oauth/access_token', {
         method: 'POST',
         headers: {
+            "Origin":"adam-kaminski-bbd.co.za",
             'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Origin': 'https://adam-kaminski-bbd.github.io/'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({ "code": window.location.search.substr(6),
                                 "client_id": 'e1dc88c88c7c930809ca',
                                 "client_secret": "7412882aabb82f2b6f473c0d8ab8a4c70d44e6d7"})
     })
     .then(response => response.json())
-    .then(response => console.log(JSON.stringify(response), "OUT"))
+    .then(response => console.log(JSON.stringify(response)))
         
     </script>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
