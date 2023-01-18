@@ -15,7 +15,8 @@
         method: 'POST',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Origin': 'https://adam-kaminski-bbd.github.io/'
         },
         body: JSON.stringify({ "code": window.location.search.substr(6),
                                 "client_id": 'e1dc88c88c7c930809ca',
